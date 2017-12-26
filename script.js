@@ -6,8 +6,10 @@ function addBeer(name, category) {
 }
 
 $(".post-beer").click(function () {
-    addBeer($('.beer-input').val(), $('.category-input').val());
+    addBeer($(".beer-input").val(), $(".category-input").val());
     renderBeers();
+    $(".beer-input").val(""); 
+    $(".category-input").val("");
 });
 
 function renderBeers() {
