@@ -13,7 +13,7 @@ $(".post-beer").click(function () {
 function renderBeers() {
     $(".beers-list").find("li").remove();
     for (var i = 0; i < beers.length; i++) {
-    $(".beers-list").append('<li>' + beers[i].name + '</li>' + beers[i].category);
+    $(".beers-list").append('<li>' + beers[i].name + '</li>' + '<li>' + beers[i].category + '</li>');
     }
 }
 
